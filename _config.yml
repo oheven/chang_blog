@@ -1,6 +1,7 @@
-name: Herring Cove
-author: Herring Cove
-baseurl: /herring-cove
+name: chang
+author: chang
+baseurl: ""
+url: "https://oheven.github.io/chang_blog/"
 description: theme for jekyll
 github: http://www.github.com/arnp
 twitter: http://www.twitter.com/
