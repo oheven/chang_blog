@@ -2,6 +2,21 @@ url: https://oheven.github.io/chang_blog/             # Site url, without a slas
 auto: true
 server: true
 
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+highlighter: rouge
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
+
+
+
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+gems: [jekyll-paginate]
+
+
+
 # Markdown settings
 # replace redcarpet to kramdown,
 # although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
@@ -9,7 +24,3 @@ server: true
 markdown: kramdown
 kramdown:
   input: GFM                            # use Github Flavored Markdown !important
-exclude: ['README.md', 'src/', 'node_modules', 'package.json', 'Gruntfile.js', '*.command']
-permalink: /:year/:month/:day/:title/
-paginate: 10
-paginate_path: "/page:num"
